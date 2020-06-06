@@ -1,0 +1,9 @@
+class Solution:
+    def moveZeroes(self,A):
+        for i in A:
+            if 0 in A:
+                A.remove(0)
+                A.append(0)
+        return A
+s=Solution()
+print (s.moveZeroes([0,1,0,3,12]))    
